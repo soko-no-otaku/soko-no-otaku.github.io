@@ -20,6 +20,12 @@ const links: LinkItem[] = [
     account: "sokofilm",
     url: "https://filmarks.com/users/soko_no_otaku",
   },
+  {
+    command: "EXPLORE",
+    service: "Swarm",
+    account: "sokospot",
+    url: "https://app.foursquare.com/share/profile/155140995",
+  },
 ];
 
 const LinkList: React.FC = () => {
