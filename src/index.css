@@ -41,3 +41,26 @@ body {
   color: var(--color-white);
   text-shadow: 2px 2px 0px var(--color-pink);
 }
+
+.pixel-btn {
+  display: inline-block;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: var(--border-width) solid var(--color-white);
+  padding: 1rem 2rem;
+  font-family: var(--font-pixel);
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.pixel-btn:hover {
+  background-color: var(--color-pink);
+  color: var(--color-black);
+  transform: translate(0, -2px);
+}
+
+.pixel-btn:active {
+  transform: translate(0, 2px);
+}
