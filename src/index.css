@@ -36,3 +36,12 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.pixel-box {
+  background-color: var(--color-black);
+  border: var(--border-width) solid var(--color-white);
+  padding: 3rem;
+  margin: 1.5rem;
+  max-width: 480px;
+  width: 100%;
+}
