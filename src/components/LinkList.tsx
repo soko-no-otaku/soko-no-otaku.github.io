@@ -63,7 +63,7 @@ const LinkList: React.FC = () => {
                 whiteSpace: "nowrap",
               }}
             >
-              <span>▶&nbsp;{link.command}</span>
+              <span>▶&#xfe0e;&nbsp;{link.command}</span>
             </div>
             <div
               style={{
