@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# soko-no-otaku's status page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**soko-no-otaku** のステータスページ（近況報告サイト）です。
 
-Currently, two official plugins are available:
+## 🛠️ 技術スタック
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **フレームワーク**: [React](https://react.dev/)
+- **ビルドツール**: [Vite](https://vite.dev/)
+- **言語**: [TypeScript](https://www.typescriptlang.org/)
+- **パッケージマネージャー**: [pnpm](https://pnpm.io/)
+- **リンター**: [ESLint](https://eslint.org/)
+- **フォーマッター**: [Prettier](https://prettier.io/)
+- **デプロイ**: GitHub Pages (GitHub Actions)
 
-## React Compiler
+## 🚀 開発方法
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 前提条件
 
-## Expanding the ESLint configuration
+- Node.js 24.x
+- pnpm 10.x
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### セットアップ
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+```bash
+# リポジトリのクローン
+git clone https://github.com/soko-no-otaku/soko-no-otaku.github.io.git
+cd soko-no-otaku.github.io
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+# 依存関係のインストール
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 開発サーバーの起動
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```bash
+pnpm run dev
 ```
+
+ブラウザで `http://localhost:5173` を開くと、開発中のサイトが表示されます。
+
+### ビルド
+
+```bash
+pnpm run build
+```
+
+本番用のビルドが `dist/` ディレクトリに生成されます。
+
+### プレビュー
+
+```bash
+pnpm run preview
+```
+
+ビルドされたサイトをローカルでプレビューできます。
+
+### リント
+
+```bash
+pnpm run lint
+```
+
+ESLintでコードの品質チェックを実行します。
+
+## 🌐 デプロイ
+
+GitHub Actionsを使用して、`main` ブランチへのプッシュ時に自動的にGitHub Pagesへデプロイされます。
+
+デプロイワークフローは `.github/workflows/deploy.yml` で定義されています。
