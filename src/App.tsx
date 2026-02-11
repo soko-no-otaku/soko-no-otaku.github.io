@@ -1,4 +1,5 @@
 import Footer from "./components/Footer";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       }}
     >
       <main className="pixel-box">
+        <Profile />
         <Footer />
       </main>
     </div>
