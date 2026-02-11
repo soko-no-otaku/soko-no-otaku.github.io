@@ -62,6 +62,18 @@ pnpm run lint
 
 ESLintでコードの品質チェックを実行します。
 
+### フォーマット
+
+```bash
+# コードを自動フォーマット
+pnpm run format
+
+# フォーマットのチェックのみ（修正はしない）
+pnpm run format:check
+```
+
+Prettierでコードのフォーマットを実行します。
+
 ## 🌐 デプロイ
 
 GitHub Actionsを使用して、`main` ブランチへのプッシュ時に自動的にGitHub Pagesへデプロイされます。
