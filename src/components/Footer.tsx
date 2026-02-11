@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
       >
         SELECT A COMMAND
         <br />
-        TO VIEW MY OBSESSIONS.
+        TO VIEW MY OBSESSIONS&hellip;
       </p>
       <p style={{ fontSize: "0.6rem", color: "var(--color-gray)" }}>
         &copy; 2026 soko-no-otaku
