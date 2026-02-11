@@ -45,3 +45,8 @@ body {
   max-width: 480px;
   width: 100%;
 }
+
+.pixel-text-pink {
+  color: var(--color-white);
+  text-shadow: 2px 2px 0px var(--color-pink);
+}
