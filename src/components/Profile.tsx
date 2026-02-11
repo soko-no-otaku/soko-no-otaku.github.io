@@ -37,14 +37,16 @@ const Profile: React.FC = () => {
             style={{
               width: "80px",
               height: "80px",
-              background: "var(--color-pink)",
-              border: "2px solid var(--color-white)",
               display: "grid",
               placeItems: "center",
               flexShrink: 0,
             }}
           >
-            <span style={{ fontSize: "2rem", color: "black" }}>👾</span>
+            <img
+              src="https://github.com/soko-no-otaku.png"
+              className="avatar"
+              alt="soko-no-otaku's avatar"
+            />
           </div>
 
           <div
