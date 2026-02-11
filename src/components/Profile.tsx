@@ -24,7 +24,7 @@ const Profile: React.FC = () => {
           }}
         >
           <span>
-            NAME: <span className="pixel-text-pink">soko-no-otaku</span>
+            NAME: <span className="profile-name">soko-no-otaku</span>
           </span>
         </div>
 
