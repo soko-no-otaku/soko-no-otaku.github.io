@@ -67,12 +67,8 @@ const LinkList: React.FC = () => {
                 lineHeight: "1.2",
               }}
             >
-              <span style={{ fontSize: "0.7rem", color: "var(--color-gray)" }}>
-                @{link.account}
-              </span>
-              <span style={{ fontSize: "0.6rem", color: "var(--color-pink)" }}>
-                &lt;{link.service}&gt;
-              </span>
+              <span className="link-account">@{link.account}</span>
+              <span className="link-service">&lt;{link.service}&gt;</span>
             </div>
           </a>
         ))}

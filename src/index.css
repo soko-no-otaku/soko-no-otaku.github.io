@@ -53,6 +53,21 @@ body {
   transition: all 0.1s;
 }
 
+.link-account {
+  font-size: 0.7rem;
+  color: var(--color-gray);
+}
+
+.link-service {
+  font-size: 0.6rem;
+  color: var(--color-pink);
+}
+
+.pixel-btn:hover .link-account,
+.pixel-btn:hover .link-service {
+  color: var(--color-pink);
+}
+
 .pixel-btn:hover {
   background-color: var(--color-pink);
   color: var(--color-black);
