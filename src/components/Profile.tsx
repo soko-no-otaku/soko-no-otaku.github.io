@@ -2,8 +2,9 @@ import React from "react";
 
 const Profile: React.FC = () => {
   return (
-    <div style={{ marginBottom: "2rem" }}>
+    <div className="profile-container" style={{ marginBottom: "2rem" }}>
       <div
+        className="profile-box"
         style={{
           border: "4px solid var(--color-white)",
           padding: "1.5rem",
@@ -14,6 +15,7 @@ const Profile: React.FC = () => {
         }}
       >
         <div
+          className="profile-header"
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -26,8 +28,12 @@ const Profile: React.FC = () => {
           </span>
         </div>
 
-        <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
+        <div
+          className="profile-stats"
+          style={{ display: "flex", gap: "2rem", alignItems: "center" }}
+        >
           <div
+            className="profile-avatar"
             style={{
               width: "80px",
               height: "80px",
@@ -41,7 +47,10 @@ const Profile: React.FC = () => {
             <span style={{ fontSize: "2rem", color: "black" }}>👾</span>
           </div>
 
-          <div style={{ flex: 1, fontSize: "0.8rem", lineHeight: "2" }}>
+          <div
+            className="profile-info"
+            style={{ flex: 1, fontSize: "0.8rem", lineHeight: "2" }}
+          >
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <span>LV:</span>
               <span>30</span>
