@@ -59,7 +59,7 @@ const Profile: React.FC = () => {
             </div>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <span>JOB:</span>
-              <span>WEB ENGINEER</span>
+              <span>ENGINEER</span>
             </div>
           </div>
         </div>
