@@ -21,6 +21,12 @@ const links: LinkItem[] = [
     url: "https://filmarks.com/users/soko_no_otaku",
   },
   {
+    command: "ATTEND",
+    service: "Eventernote",
+    account: "sokolive",
+    url: "https://www.eventernote.com/users/sokolive",
+  },
+  {
     command: "EXPLORE",
     service: "Swarm",
     account: "sokospot",
